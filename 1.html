@@ -1,0 +1,123 @@
+<!-- 주석
+태그
+h1~6: 제목태그
+strong: 강조태그(굵은글씨)
+u: 밑줄 태그
+br: 줄바꿈 태그
+p 문장 줄바꿈 태그
+li: 목차 태그
+ul: 목차 분류 태그
+ol: li의 부모 태그, ul기능 + li 태그의 목차에 자동번호 매김
+body: 본문
+head: 본문을 설명하는 태그
+a: 링크태그, 누르면 사이트로 이동 가능
+
+속성
+img: 이미지 추가
+<meta charset="utf-8">: 한글이 깨지는 것을 방지한다.
+-->
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {
+            color:black; 
+            text-decoration: none;
+        }
+    </style>
+    <title>WEB - HTML</title>
+</head>
+<body>
+    <h1><a href="index.html" target="_blank" title="WEB Information">WEB</a></h1>
+        <ol>
+            <li><a href="1.html" target="_blank" title="HTML Information" style="color:red; text-decoration:underline;">HTML</a></li>
+            <li><a href="2.html" target="_blank" title="CSS Information">CSS</a></li>
+            <li><a href="3.html" target="_blank" title="JavaScript Information">JavaScript</a></li>
+        </ol>
+        <h2>HTML</h2>
+        <p><a href="https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank" title="html5 내용">Hypertext Markup Language (HTML)</a> is the stadard markup<br>
+        language for <strong>creating <u>web</u> pages</strong> and web applications.</p>
+
+        <img src="HTML.png" width="20%">
+        <h3>HTML 정의</h3>
+        <p>하이퍼 텍스트 마크업 언어(Hyper Text Markup Language, HTML, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)는 웹 페이지를 위한 지배적인 마크업 언어다. 또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 
+        인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. 
+        HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는
+         자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. 
+         HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.</p>
+        <br>
+        <br>
+        <h3>태그의 정의</h3>
+        <p><strong>제목 태그</strong></p>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+        <br>
+
+        <p><strong>strong, 강조 태그</strong></p>
+        <p><strong>글씨가 진해짐</strong></p>
+        <br>
+
+        <p><strong>u, 밑줄 태그</strong></p>
+        <p><u>밑줄을 긋는 태그</u></p>
+        <br>
+
+        <p><strong>br, 줄 바꿈 태그</strong></p>
+        <p>서로<br>줄을 바꾼다</p>
+        <br>
+
+        <p><strong>p, 문장 바꿈 태그</strong></p>
+        <p>문장의</p> <p>줄을 바꾼다</p>
+        <br>
+
+        <p><strong>li, 목차태그</strong></p>
+        <p>
+            <li>목차태그 1</li>
+            <li>목차태그 2</li>
+            <li>목차태그 3</li>
+        </p>
+        <br>
+
+        <p><strong>ul, 목차분류태그</strong></p>
+        <ul>
+            <li>목차분류태그 1</li>
+            <li>목차분류태그 2</li>
+            <li>목차분류태그 3</li>
+        </ul>
+        <br>
+
+        <p><strong>ol, 번호매김 목차분류태그</strong></p>
+        <ol>
+            <li>목차분류태그 </li>
+            <li>목차분류태그 </li>
+            <li>목차분류태그 </li>
+        </ol>
+        <br>
+
+        <p><strong>body, 본문 태그</strong></p>
+        <p>웹사이트의 내용이 담겨있음</p>
+        <br>
+
+        <p><strong>head, 본문 설명 태그</strong></p>
+        <p><strong>body</strong> 태그의 내용을 설명 or 설정할 때 사용하는 태그</p>
+        <br>
+
+        <p><strong>a, 링크 태그</strong></p>
+        <p>다른 웹사이트로 이동할 수 있음</p>
+        <a href="https://www.youtube.com/channel/UCgJ8iR8g3_7Cx-kqZZAcRrQ" target="_blank" style="text-decoration: underline; color:red;">내 유튜브 바로가기</a>
+        <br>
+
+        <br>
+        <br>
+        <h3>속성의 정의</h3>
+        <p><strong>img, 사진추가</strong></p>
+        <img src="coding.jpg" width="50%">
+        <br>
+</body>
+</html>
