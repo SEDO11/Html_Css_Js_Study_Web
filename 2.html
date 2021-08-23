@@ -6,63 +6,75 @@
 -->
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB - CSS</title>
-    <style>
-        a {
-            color:black; /*모든 a 태그의 색깔을 검정색으로 바꿈*/
-            text-decoration: none; /*밑줄 제거*/
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1><a href="index.html" title="WEB Information">WEB</a></h1>
-    <ol>
-        <li><a href="1.html" title="HTML Information">HTML</a></li>
-        <li><a href="2.html" title="CSS Information" style="color: red; text-decoration: underline;" ><!--
-            text-decoration: underline;"은 여기에 밑줄을 긋는다는 뜻임
-        -->CSS</a></li> <!--여기에서 쓰이는 style은 html의 속성이다. css아님-->
-        <li><a href="3.html" title="JavaScript Information">JavaScript</a></li>
-    </ol>
-    <!--
-        이것과 CSS을 이용해 색깔을 바꾸는 것은 같음
-    <h1><a href="index.html" target="_blank" title="WEB Information"><font color="red">WEB</font></a></h1>
-    <ol>
-        <li><a href="1.html" target="_blank" title="HTML Information"><font color="red">HTM</font>L</a></li>
-        <li><a href="2.html" target="_blank" title="CSS Information"><font color="red">CSS</font></a></li>
-        <li><a href="3.html" target="_blank" title="JavaScript Information"><font color="red">Jav</font>aScript</a></li>
-    </ol>
-    -->
-    <h2>CSS</h2>
-    <h3>CSS 정의</h3>
-    <img src="picture/CSS.png" width="20%" >
-    <p>종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
-        마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
-        현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.</p>
-    <br>
-    <b
-    <h3>코드 정의</h3>
-    <p><strong>style</strong></p>
-    <p><strong style="color: red;">style</strong>="color: red; text-decoration: underline;</p> 
-    <p>여기서 <strong style="color: red;">style</strong>은 html의 속성이다.</p>
-    <br>
 
-    <p><strong>head 내에 있는 style</strong></p>
-    <strong style="color: blue;">style</strong><br>
-        a {<br>
-            color:black; (1)<br>
-            text-decoration: none; (2)<br>
-        }<br>
-        <strong style="color: blue;">/style</strong>
-    <p><strong>위의 css 코드 해석 <br>(1) a 태그의 모든 색깔을 검정으로 바꾸고 <br>(2) 밑줄을 제거하라</strong></p>
-    <p>여기에서 <strong style="color: blue;">style</strong>은 css로 안에있는 내용을 읽으라는 뜻이다.</p>
-    <p style="color: blue;">a, 선택자</p>
-    <p style="color: blue;">{ }, 선언문</p>
-    <p style="color: blue;">color:, text-decoration:  속성</p> 
-    <p style="color: blue;">black, none 값</p>
-    <br>
+<body>
+    <div id="mainTitle">
+        <h1><a href="index.html" title="WEB Information">WEB</a></h1>
+    </div>
+    <div id="grid">
+        <div id="mainlist">
+            <ol>
+                <li><a href="1.html" title="HTML Information" class="saw" id="active">HTML</a></li>
+                <li><a href="2.html" title="CSS Information" class="saw">CSS</a></li>
+                <li><a href="3.html" title="JavaScript Information" class="saw">JavaScript</a></li>
+            </ol>
+        </div>
+        <div id="article">
+            <h2>CSS</h2>
+            <h3>CSS 정의</h3>
+            <img src="picture/CSS.png" id="mainPicture">
+            <p>종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로
+                쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+                마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도
+                전혀 다른 웹사이트처럼 꾸밀 수 있다.
+                현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어
+                어도비 플래시를 어느 정도 대체하고 있다.</p>
+            <br>
+            <br>
+            <h3>코드 정의</h3>
+            <div id="stylecolor">
+                <h4>style</h4>
+                <p><strong>style</strong>="color: red; text-decoration: underline;</p>
+                <p>여기서 <strong>style</strong>은 html의 속성이다.</p>
+                <br>
+
+                <h4>head 내에 있는 style</h4>
+                <strong>style</strong><br>
+                a {<br>
+                color:black; (1)<br>
+                text-decoration: none; (2)<br>
+                }<br>
+                <strong>/style</strong>
+                <p><strong>위의 css 코드 해석 <br>(1) a 태그의 모든 색깔을 검정으로 바꾸고 <br>(2) 밑줄을 제거하라</strong></p>
+                <p>여기에서 <strong>style</strong>은 <strong>css</strong>로 안에있는 내용을 읽으라는 뜻이다.</p>
+                <p>a, 선택자</p>
+                <p>{ }, 선언문</p>
+                <p>color:, text-decoration: 속성</p>
+                <p>black, none 값</p>
+                <br>
+
+                <h4>글씨 크기 조정 코드</h4>
+                <p><strong>font-size: 60px;</strong></p>
+                <p>font-size => 폰트크기 조정속성</p>
+                <p>60px => 60px 사이즈로 만든다 or %, lagre등으로 나타낼 수 있음</p>
+                <br>
+
+                <h4>글씨 위치 조정 코드</h4>
+                <p><strong>text-align: center;</strong></p>
+                <p>text-align => 글씨 위치 속성</p>
+                <p>center => 폰트를 가운데 정렬 시킴, left, right 등도 있음</p>
+                <br>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

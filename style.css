@@ -1,0 +1,71 @@
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#article {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#webImg {
+    width: 100%;
+}
+
+#htmlcolor h4{
+    color: orangered;
+}
+
+#mainlist ol {
+    border-right: 1px solid gray;
+    height: 100%;
+    width: 80px;
+    padding: 30px;
+    padding-left: 40px;
+    margin: 0;
+}
+
+#stylecolor h4{
+    color: blue;
+}
+
+#mainPicture {
+    width: 20%;
+}
+
+#mainTitle h1 {
+    font-size: 60px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+@media (max-width:800px) {
+    #grid {
+        display: block;
+    }
+
+    #mainlist ol{
+        border-right: none;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        padding-left: 50%;
+        border-right: 50%;
+    }
+
+    #mainPicture {
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
