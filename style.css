@@ -8,18 +8,17 @@
     padding-right: 25px;
 }
 
-#webImg {
-    width: 100%;
-}
-
 #htmlcolor h4{
     color: orangered;
 }
 
+#webImg{
+    width: 50%;
+}
+
 #mainlist ol {
     border-right: 1px solid gray;
-    height: 100%;
-    width: 80px;
+    height: 50%;
     padding: 30px;
     padding-left: 40px;
     margin: 0;
@@ -53,16 +52,18 @@ body {
     #grid {
         display: block;
     }
+    
+    body{
+        margin: 0;
+    }
 
     #mainlist ol{
         border-right: none;
         border-bottom: 1px solid gray;
-        width: 100%;
         padding-left: 50%;
-        border-right: 50%;
     }
 
-    #mainPicture {
+    #mainPicture, #webImg{
         width: 50%;
         text-align: center;
         margin-left: 25%;
