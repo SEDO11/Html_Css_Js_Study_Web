@@ -62,11 +62,19 @@ body {
         border-bottom: 1px solid gray;
         padding-left: 50%;
     }
+    #webImg{
+        width: 100%;
+        margin: 0;
+    }
 
-    #mainPicture, #webImg{
+    #mainPicture{
         width: 50%;
         text-align: center;
         margin-left: 25%;
         margin-right: 25%;
+    }
+
+    h2{
+        text-align: center;
     }
 }
